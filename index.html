@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker Zone</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.19/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind custom CSS -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#E76F51',
+                secondary: '#264653',
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body>
+    <header class="bg-secondary">
+        <!-- Navbar -->
+        <nav class="md:container mx-auto font-medium text-lg p-8 bg-secondary text-white">
+            <div class="navbar ">
+                <div class="navbar-start flex-1">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-xl">Biker Zone</a>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>News</a></li>
+                    <li><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end w-auto">
+                  <a class="btn  bg-primary px-8 rounded-md border-none text-white hover:bg-white hover:text-primary hover:border-primary">Sign in</a>
+                </div>
+              </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero min-h-screen lg:min-h-[85vh] bg-secondary px-4">
+            <div class="hero-content flex-col-reverse gap-12 lg:flex-row-reverse text-white">
+              <img src="./images/slider/bike1.png" class=" lg:w-1/2"/>
+              <div class=" lg:w-1/2">
+                <p>Computer-controlled digital transistorized with electronic advance</p>
+                <h1 class="text-5xl font-bold">Honda CBR 300R</h1>
+                <p class="py-6 text-[#E0E0E0]">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                <button class="btn bg-primary px-12 rounded-md border-none text-white hover:bg-white hover:text-primary hover:border-primary">Purchase</button>
+              </div>
+            </div>
+          </div>
+    </header>
+    <main class="md:container">
+       <section class="featured-section my-24">
+        <div>
+            <h1 class="text-center text-3xl md:text-5xl font-semibold">
+                Fetured Bikes In This Year
+            </h1>
+            <p class="text-center text-sm text-primary pt-3">Best bike collection </p> 
+        </div>
+        <div class="pt-24 flex flex-col gap-12 md:flex-row justify-evenly">
+            <div class="flex justify-center">
+                <img src="./images/others/feature-bike.png" class="md:w-9/12 lg:w-auto" alt="">
+            </div>
+            <div class="flex justify-center">
+                <img src="./images/others/feature-bike.png" class="md:w-9/12 lg:w-auto" alt="">
+            </div>
+            <div class="flex justify-center">
+                <img src="./images/others/feature-bike.png" class="md:w-9/12 lg:w-auto" alt="">
+            </div>
+        </div>
+       </section> 
+        
+    </main>
+</body>
+</html>
